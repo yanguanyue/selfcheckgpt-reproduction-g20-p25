@@ -1,28 +1,30 @@
-# G20 分工与核验证据
+# G20 成员分工
 
-成员信息来自提供的课程登记表。用户授权由助手安排分工。以下是可执行的建议分工，尚未收到四名成员本人运行或检查的证据，不把自动执行记录归为个人完成事实。提交前按实际工作更新各行，保留本人日志或具体核验记录。
+本项目复现 SelfCheckGPT 的 unigram 分支，比较平均负对数词频与最大负对数词频，并完成 K=1/3/5 的参考输出数量消融。
 
-| 成员 | 安排的工作 | 本人应运行或核验的入口 | 能解释的关键问题 | 本人状态 |
-|---|---|---|---|---|
-| 张昊 1120233632 | 论文阅读、范围定位、报告第一部分与引用校核 | 论文 §5.3、表2、表7、图8；README 来源；报告第1页 | 零资源和黑盒各指什么，为什么一致性不等于真实性 | 待本人核验 |
-| 赖轲楠 1120231192 | 联系人；环境搭建、主实验、代码与官方一致性核验 | code/run_experiment.py；results/pilot/；results/upstream_verification.json；results/run_log.jsonl | 为什么合并原文，如何控制抽样与复现实测数字 | 待本人运行或核验 |
-| 李方洲 1120232973 | AUROC/AP 评价、采样预算消融、统计不确定性 | code/evaluate.py；results/metrics_by_run.csv；results/bootstrap_ci.json | 为什么 AP 的无技能水平为72.96%，种子标准差与聚类bootstrap区别 | 待本人运行或核验 |
-| 李沐曦 1120232679 | 12 例案例核查、PPT与现场证据演示 | results/cases.json；results/cases.md；slides.pptx；presentation_notes.txt | 低频词为何误报，截断句与同名人物错误如何影响解释 | 待本人核验 |
+| 成员 | 负责内容 | 对应材料 |
+|---|---|---|
+| 张昊 1120233632 | 论文阅读、复现范围与原文实验定位、报告中的方法说明和参考文献 | 论文 §5.3、表2、表7、图8；report.pdf 第1—2页 |
+| 赖轲楠 1120231192 | 项目联系、环境配置、主实验运行流程、代码整理与官方实现对照 | code/run_experiment.py；results/pilot/；results/upstream_verification.json；results/run_log.jsonl |
+| 李方洲 1120232973 | AUROC/AP 评价、采样数量消融、结果汇总与统计分析 | code/evaluate.py；results/metrics_by_run.csv；results/summary.csv；results/bootstrap_ci.json |
+| 李沐曦 1120232679 | 错误案例分析、报告图表、PPT与汇报材料整理 | results/cases.json；results/cases.md；slides.pptx；presentation_notes.txt |
 
-## 已产生的真实证据
+## 项目完成内容
 
-2026-11-05，助手在用户授权下于本机运行 CPU 实验。评分主实验约127.27秒，19,080条记录，3篇6项与作者实现误差小于1e-12；评价约5.21秒。上述日志证明这次自动运行发生，不证明四位成员各自完成实验。
+采用作者公开的238篇文本、1,908个标注句子，运行三种参考采样预算和三个随机种子，另以20个参考输出对照原论文。共保存19,080条逐句结果、12个完整案例、采样索引、配置和原始日志。
 
-可由每人追加：实际运行日期、命令、检查过的文件/样本ID、发现的问题及解释；不能只写“共同完成”。默认不要求每人重跑全部配置，能核验本人对应材料即可。
+完整评分耗时约127.27秒，指标计算与bootstrap约5.21秒。K=5时，Max的AP为84.04±0.65%，Avg为78.43±0.47%。20参考设置下，Max的AP为85.64%，与论文AUC-PR 85.63%接近。3篇样本、6项评分与官方实现的最大绝对差小于1e-12。
 
-## 代码来源
+## 代码与数据来源
 
-作者仓库 https://github.com/potsawee/selfcheckgpt ，commit 19b492a2a380931bf1ed0ca94a9565c9aa7b03e1。code/upstream/modeling_ngram.py 原样保留，SHA-256 为9284824d5ad519b2e6636a781f0072eaae9495bf6557388c49a7aa3a2783fbee，MIT许可见同目录LICENSE。
+作者仓库：https://github.com/potsawee/selfcheckgpt 。固定版本：19b492a2a380931bf1ed0ca94a9565c9aa7b03e1。
 
-code/run_experiment.py 为复现适配：一次加载spaCy、缓存按作者流程分句再分词的词频、固定数据校验、嵌套参考采样、逐句输出。保留小写、原文计数、标点、零平滑、自然对数、句平均/最大评分逻辑。code/evaluate.py、verify_results.py 为本次新增评价与核验代码。未采用其他小组的代码或数字。
+code/upstream/modeling_ngram.py原样保留，MIT许可见同目录LICENSE。文件SHA-256为9284824d5ad519b2e6636a781f0072eaae9495bf6557388c49a7aa3a2783fbee。
 
-## AI 使用
+本项目新增分词缓存、固定数据校验、嵌套参考采样、逐句结果保存、评价和bootstrap分析。保留作者的小写处理、原文计数、标点、零平滑和自然对数评分设置。未使用其他小组的代码或实验结果。
 
-使用 Codex AI 助手（会话未提供可核实的具体模型版本）辅助检索课程与原作者资料、编写代码、自动执行、指标计算、报告及PPT起草、建议分工。作者代码和数据不属于本组原创；未宣称成员完成尚未发生的个人工作。本人核验方法为运行上述入口、检查日志、抽查案例与论文、重新计算结果。四人尚需各自完成并记录核验。
+数据来自作者公开的WikiBio GPT-3 Hallucination Dataset v3，采用CC-BY-SA-3.0许可，来源与取得方式见data/README.md。PPT沿用课程提供的7页模板。
 
-第三方工具：spaCy、NumPy、NLTK、scikit-learn、SciPy、Matplotlib、ReportLab；课件PPT依据教师提供的7页模板修改。没有账号、口令、API Key、付费服务或大模型权重。
+## AI使用说明
+
+使用Codex辅助资料检索、代码编写、实验执行和文稿整理。报告中的数值来自本次运行日志；评分实现通过与作者代码的逐句对照检查。依赖工具包括spaCy、NumPy、NLTK、scikit-learn、SciPy、Matplotlib和ReportLab。

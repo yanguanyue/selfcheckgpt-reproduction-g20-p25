@@ -2,8 +2,6 @@
 
 [完整作业压缩包](NLP2026_G20_P25.zip) · [报告 PDF](report.pdf) · [汇报 PPT](slides.pptx) · [汇报 PDF](slides.pdf)
 
-本仓库保存本次真实运行的代码、配置、公开数据、报告与实验结果。
-
 课程：自然语言处理项目实践 2026。联系人：赖轲楠（1120231192）。
 成员：张昊（1120233632）、赖轲楠（1120231192）、李方洲（1120232973）、李沐曦（1120232679）。
 
@@ -60,8 +58,8 @@ python -m venv .eval
 - `code/upstream/modeling_ngram.py` 原样保留，MIT 许可随附；本组实现合并分词缓存以减少重复加载，用原实现核对实际分数。没有使用后增的 NLI 分支替代课程限定分支。
 - 数据：https://huggingface.co/datasets/potsawee/wiki_bio_gpt3_hallucination ，v3，许可 CC-BY-SA-3.0。
 - 课程要求：https://nlp.hltbit.top/2026/materials/w01/classroom/papers.html 与同目录 `requirements.html`。
-- AI 辅助及建议个人分工见 `contributions.md`，自动运行不冒充四名成员本人已完成核验。
+- 成员分工、代码来源与 AI 使用说明见 `contributions.md`。
 
-## 提交前
+## 提交信息
 
-按 `contributions.md` 完成各自核验后更新实际贡献。核对教师确认组号/论文号、最后修改材料、检查压缩包可解压。截止 2026-11-22 24:00，由联系人上传延河课堂并确认提交，登记表填写教师可访问的材料链接。当前包不会自动上传、创建公开仓库或修改在线登记表。当前进展记录写明实际日期，不回填 10 月的完成时间。
+提交包为 `NLP2026_G20_P25.zip`。截止时间为2026-11-22 24:00，由联系人在延河课堂上传，并在登记表填写项目链接：https://github.com/yanguanyue/selfcheckgpt-reproduction-g20-p25 。

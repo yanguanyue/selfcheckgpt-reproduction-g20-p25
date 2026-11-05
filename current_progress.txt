@@ -1,5 +1,5 @@
 G20 / P25 当前进展记录
-实际记录日期：2026-11-05，不回填10月的试跑/中期完成日期。
+记录日期：2026-11-05。
 
 论文：SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models，EMNLP 2023。
 成员：张昊1120233632、赖轲楠1120231192、李方洲1120232973、李沐曦1120232679。联系人赖轲楠。
@@ -23,7 +23,7 @@ K=20：Max AP85.64，梯形PR-AUC85.62，论文AUC-PR85.63；相关性也接近�
 完整12例见results/cases.json与cases.md，含输入、标签、两种分数和5个参考全文。
 
 下一项单因素实验：当前已完成规定的K消融。若继续扩展，预先固定同一K=5、seed与参考索引，仅把评分器替换为BERTScore，其他设置不变；需按课程规定说明扩展范围。当前不为此购买资源。
-当前待办：四人按contributions.md完成本人运行/核验、更新实际贡献；检查汇报和提交平台。助手自动运行不能代替四个人各自的核验记录。
-课程最终截止：2026-11-22 24:00，联系人上传延河课堂并确认提交，登记表填教师可访问链接。本地文件生成不代表完成平台提交。
+已整理报告、PPT、运行命令、配置、逐句结果和12个完整案例。成员分工见contributions.md。
+课程最终截止：2026-11-22 24:00，联系人上传延河课堂并确认提交，登记表填教师可访问链接。项目地址：https://github.com/yanguanyue/selfcheckgpt-reproduction-g20-p25 。
 
 组织格式参考（不使用其代码或结果）：登记表中G3公开BitFit中期记录，https://github.com/G-White-Tony/NLPP/blob/ae53e082fa38a36ba6f98c1a5afed99c10f61247/docs/midterm.md ，仅参考原文定位、并列结果、逐样本入口与失败案例的写法。

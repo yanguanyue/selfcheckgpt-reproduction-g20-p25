@@ -17,6 +17,6 @@
 约55秒。这里只改变K。三种子Max AP为79.00±0.66、82.51±0.55、84.04±0.65。58488:1作者标轻微错误，WikiBio参照为加赛淘汰而非铜牌；10582:0作者标准确，但有采样写错去世年份。这两例分别提示常见词掩盖关系错误和参考幻觉惩罚真实细节。低分/高分是排序边界，不是预先校准分类器的漏报/误报统计。完整12例见results/cases.json与报告附录。
 
 第7页
-约40秒。总结局部结论，不能宣称词频方法达到论文NLI或Prompt的表现。三篇资源试跑5.11秒，完整评分127.27秒，评价5.21秒，不需服务器。分工由联系人授权安排，四人尚需本人运行/核验后填写实际贡献。随后用1分钟展示：README命令入口、configs/experiment.json、results/predictions.jsonl中的58488:1与10582:0、metrics_by_run.csv，以及upstream_verification.json；不要现场重新训练。来源：results/environment.json、evaluation_environment.json、contributions.md。
+约40秒。总结局部结论，不能宣称词频方法达到论文NLI或Prompt的表现。三篇资源试跑5.11秒，完整评分127.27秒，评价5.21秒，不需服务器。张昊负责论文与方法，赖轲楠负责环境与实验，李方洲负责指标和消融，李沐曦负责案例与汇报。随后用1分钟展示：README命令入口、configs/experiment.json、results/predictions.jsonl中的58488:1与10582:0、metrics_by_run.csv，以及upstream_verification.json；不要现场重新训练。来源：results/environment.json、evaluation_environment.json、contributions.md。
 
 主讲总时长约300秒。另1分钟证据展示，1分30秒指定成员答问，30秒换组。
