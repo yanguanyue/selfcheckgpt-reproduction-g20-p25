@@ -1,0 +1,10 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.14.1",
+    "matplotlib": "3.9.2"
+  },
+  "wall_s": 5.207262099997024
+}

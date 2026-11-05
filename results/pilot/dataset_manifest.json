@@ -1,0 +1,15 @@
+{
+  "document_ids": [
+    62464,
+    49661,
+    20483
+  ],
+  "passages": 3,
+  "sentences": 25,
+  "labels": {
+    "major_inaccurate": 14,
+    "minor_inaccurate": 10,
+    "accurate": 1
+  },
+  "selection": "all public evaluation passages, original dataset order; no train/dev tuning"
+}

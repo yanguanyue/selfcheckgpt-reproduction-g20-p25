@@ -1,0 +1,5 @@
+{
+  "ap": 0.7295597484276729,
+  "auroc": 0.5,
+  "meaning": "constant-score no-skill reference; AP equals positive prevalence"
+}

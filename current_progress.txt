@@ -1,0 +1,29 @@
+G20 / P25 当前进展记录
+实际记录日期：2026-11-05，不回填10月的试跑/中期完成日期。
+
+论文：SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models，EMNLP 2023。
+成员：张昊1120233632、赖轲楠1120231192、李方洲1120232973、李沐曦1120232679。联系人赖轲楠。
+原文目标：§5.3；表2 Unigram(max)；附录D表7的Avg/Max 1-gram与图8。
+类型与范围：原设置部分复现，仅词频分支。数据为作者公开238篇、1908句、每篇20参考。
+基线Avg与目标Max共享数据与分词，只改变句内聚合方式。消融只改变K=1/3/5，三个嵌套参考抽样种子42/43/44；20参考另作锚点。
+
+资源检查：本机Windows 11，约32 GB内存，无CUDA；CPU即可，不需训练服务器或付费API。3篇资源试跑5.11秒，已保存results/pilot/。完整评分127.27秒，评价5.21秒。零API调用。
+设置差异：采用spaCy3.8.11/en_core_web_sm3.8.0；固定作者commit 19b492a2a380931bf1ed0ca94a9565c9aa7b03e1；复用已生成文本。公开集多配置比较为探索性复现，不声称新盲测。
+
+已有并列结果（非事实AP，%，三种子均值±样本标准差）：
+K=1：Avg72.65±0.67，Max79.00±0.66。
+K=3：Avg76.56±0.27，Max82.51±0.55。
+K=5：Avg78.43±0.47，Max84.04±0.65。AUROC分别60.23±0.51和69.87±0.30。
+K=20：Max AP85.64，梯形PR-AUC85.62，论文AUC-PR85.63；相关性也接近原文。不是完全相同数值。
+逐条证据：results/predictions.jsonl（19080条），sample_selections.json，metrics_by_run.csv，upstream_verification.json（3篇6项误差<1e-12）。
+
+两例失败/边界：
+58488:1 作者标签minor_inaccurate，生成句说2012奥运会蛙泳铜牌，WikiBio参照为加赛淘汰；Avg3.903/Max5.093，说明常见词不能验证奖牌关系。
+10582:0 作者标签accurate，Anne de Gaulle的亲属与1928—1948生卒年；Avg4.675/Max7.144，参考文本之一写错为1945，说明参考本身会幻觉。
+完整12例见results/cases.json与cases.md，含输入、标签、两种分数和5个参考全文。
+
+下一项单因素实验：当前已完成规定的K消融。若继续扩展，预先固定同一K=5、seed与参考索引，仅把评分器替换为BERTScore，其他设置不变；需按课程规定说明扩展范围。当前不为此购买资源。
+当前待办：四人按contributions.md完成本人运行/核验、更新实际贡献；检查汇报和提交平台。助手自动运行不能代替四个人各自的核验记录。
+课程最终截止：2026-11-22 24:00，联系人上传延河课堂并确认提交，登记表填教师可访问链接。本地文件生成不代表完成平台提交。
+
+组织格式参考（不使用其代码或结果）：登记表中G3公开BitFit中期记录，https://github.com/G-White-Tony/NLPP/blob/ae53e082fa38a36ba6f98c1a5afed99c10f61247/docs/midterm.md ，仅参考原文定位、并列结果、逐样本入口与失败案例的写法。

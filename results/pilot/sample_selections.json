@@ -1,0 +1,353 @@
+[
+  {
+    "doc_id": 62464,
+    "seed": 42,
+    "k": 1,
+    "sample_indices": [
+      4
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 42,
+    "k": 1,
+    "sample_indices": [
+      16
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 42,
+    "k": 1,
+    "sample_indices": [
+      10
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 42,
+    "k": 3,
+    "sample_indices": [
+      4,
+      2,
+      11
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 42,
+    "k": 3,
+    "sample_indices": [
+      16,
+      14,
+      0
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 42,
+    "k": 3,
+    "sample_indices": [
+      10,
+      0,
+      9
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 42,
+    "k": 5,
+    "sample_indices": [
+      4,
+      2,
+      11,
+      14,
+      10
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 42,
+    "k": 5,
+    "sample_indices": [
+      16,
+      14,
+      0,
+      7,
+      2
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 42,
+    "k": 5,
+    "sample_indices": [
+      10,
+      0,
+      9,
+      18,
+      4
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 42,
+    "k": 20,
+    "sample_indices": [
+      4,
+      2,
+      11,
+      14,
+      10,
+      1,
+      19,
+      6,
+      16,
+      12,
+      8,
+      18,
+      17,
+      13,
+      15,
+      3,
+      0,
+      9,
+      5,
+      7
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 42,
+    "k": 20,
+    "sample_indices": [
+      16,
+      14,
+      0,
+      7,
+      2,
+      13,
+      9,
+      5,
+      1,
+      11,
+      19,
+      17,
+      8,
+      4,
+      10,
+      12,
+      6,
+      3,
+      18,
+      15
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 42,
+    "k": 20,
+    "sample_indices": [
+      10,
+      0,
+      9,
+      18,
+      4,
+      12,
+      19,
+      17,
+      7,
+      13,
+      6,
+      1,
+      11,
+      15,
+      2,
+      5,
+      3,
+      14,
+      8,
+      16
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 43,
+    "k": 1,
+    "sample_indices": [
+      18
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 43,
+    "k": 1,
+    "sample_indices": [
+      9
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 43,
+    "k": 1,
+    "sample_indices": [
+      19
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 43,
+    "k": 3,
+    "sample_indices": [
+      18,
+      1,
+      13
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 43,
+    "k": 3,
+    "sample_indices": [
+      9,
+      2,
+      0
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 43,
+    "k": 3,
+    "sample_indices": [
+      19,
+      10,
+      15
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 43,
+    "k": 5,
+    "sample_indices": [
+      18,
+      1,
+      13,
+      3,
+      2
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 43,
+    "k": 5,
+    "sample_indices": [
+      9,
+      2,
+      0,
+      7,
+      14
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 43,
+    "k": 5,
+    "sample_indices": [
+      19,
+      10,
+      15,
+      9,
+      3
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 44,
+    "k": 1,
+    "sample_indices": [
+      5
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 44,
+    "k": 1,
+    "sample_indices": [
+      0
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 44,
+    "k": 1,
+    "sample_indices": [
+      17
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 44,
+    "k": 3,
+    "sample_indices": [
+      5,
+      9,
+      10
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 44,
+    "k": 3,
+    "sample_indices": [
+      0,
+      13,
+      3
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 44,
+    "k": 3,
+    "sample_indices": [
+      17,
+      15,
+      6
+    ]
+  },
+  {
+    "doc_id": 62464,
+    "seed": 44,
+    "k": 5,
+    "sample_indices": [
+      5,
+      9,
+      10,
+      1,
+      12
+    ]
+  },
+  {
+    "doc_id": 49661,
+    "seed": 44,
+    "k": 5,
+    "sample_indices": [
+      0,
+      13,
+      3,
+      17,
+      14
+    ]
+  },
+  {
+    "doc_id": 20483,
+    "seed": 44,
+    "k": 5,
+    "sample_indices": [
+      17,
+      15,
+      6,
+      5,
+      2
+    ]
+  }
+]

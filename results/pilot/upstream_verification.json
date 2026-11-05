@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "doc_id": 62464,
+      "score": "avg_nll",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "doc_id": 62464,
+      "score": "max_nll",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "doc_id": 49661,
+      "score": "avg_nll",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "doc_id": 49661,
+      "score": "max_nll",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "doc_id": 20483,
+      "score": "avg_nll",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "doc_id": 20483,
+      "score": "max_nll",
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "tolerance": 1e-12
+}

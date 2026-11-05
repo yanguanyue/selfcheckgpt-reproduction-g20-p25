@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "records": 19080,
+  "unique_sentences": 1908,
+  "nested_selections": "passed",
+  "label_direction": "passed",
+  "case_evidence": "passed",
+  "official_implementation_parity": "passed"
+}

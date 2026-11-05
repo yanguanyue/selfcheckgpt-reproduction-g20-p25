@@ -1,0 +1,22 @@
+第1页
+约25秒。题目为SelfCheckGPT，只复现课程P25允许的词频分支。成员学号见报告，联系人赖轲楠。说明不是整篇论文所有分支的复现。来源：https://aclanthology.org/2023.emnlp-main.557/ ；课程模板来自 https://nlp.hltbit.top/2026/materials/w01/classroom/presentation-template.pptx 。
+
+第2页
+约35秒。黑盒指不读取被检测模型内部概率；零资源指不需要外部事实库。输入均为作者公开文本，无新API请求。原文定位为第5.3节、表2 Unigram(max)、表7 Avg/Max 1-gram与图8。来源：论文；data/README.md。
+
+第3页
+约45秒。公式为自然对数，单位nats。加入原文是原作者实现的设置，否则参考中没有出现的词会带来零概率。Avg可能被常见功能词稀释，Max更关注稀有词。但Max不是概率，也不把它直接当作百分比。code/run_experiment.py；code/upstream/modeling_ngram.py；固定commit 19b492a2a380931bf1ed0ca94a9565c9aa7b03e1。
+
+第4页
+约40秒。accurate516句、minor631句、major761句。完整evaluation集用于探索性复现，不拟合参数、不选择测试阈值。每篇SeedSequence([seed,doc_id])，前1/3/5个索引嵌套，两种方法共享参考。三个种子只改变参考抽样，不是三次模型训练。来源：results/dataset_manifest.json、sample_selections.json。
+
+第5页
+约60秒。主要比较相同K=5：Avg AP78.43±0.47、AUROC60.23±0.51；Max AP84.04±0.65、AUROC69.87±0.30，均为百分数。注意AP无技能水平72.96%。原论文20参考的AUC-PR与本次K5不可直接逐值比；额外K20本次AP85.64、梯形PR-AUC85.62，原论文85.63。固定seed42按篇配对bootstrap，AP差95%区间[3.93,9.47]个百分点，不等同于三种子标准差。来源：results/summary.csv、bootstrap_ci.json；论文表2。
+
+第6页
+约55秒。这里只改变K。三种子Max AP为79.00±0.66、82.51±0.55、84.04±0.65。58488:1作者标轻微错误，WikiBio参照为加赛淘汰而非铜牌；10582:0作者标准确，但有采样写错去世年份。这两例分别提示常见词掩盖关系错误和参考幻觉惩罚真实细节。低分/高分是排序边界，不是预先校准分类器的漏报/误报统计。完整12例见results/cases.json与报告附录。
+
+第7页
+约40秒。总结局部结论，不能宣称词频方法达到论文NLI或Prompt的表现。三篇资源试跑5.11秒，完整评分127.27秒，评价5.21秒，不需服务器。分工由联系人授权安排，四人尚需本人运行/核验后填写实际贡献。随后用1分钟展示：README命令入口、configs/experiment.json、results/predictions.jsonl中的58488:1与10582:0、metrics_by_run.csv，以及upstream_verification.json；不要现场重新训练。来源：results/environment.json、evaluation_environment.json、contributions.md。
+
+主讲总时长约300秒。另1分钟证据展示，1分30秒指定成员答问，30秒换组。

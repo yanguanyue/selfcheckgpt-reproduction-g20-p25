@@ -1,0 +1,66 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "versions": {
+    "spacy": "3.8.11",
+    "numpy": "2.5.4",
+    "en-core-web-sm": "3.8.0"
+  },
+  "tokenization_and_startup_s": 121.9084256999995,
+  "scoring": [
+    {
+      "seed": 42,
+      "k": 1,
+      "cached_scoring_s": 0.0543175999991945
+    },
+    {
+      "seed": 42,
+      "k": 3,
+      "cached_scoring_s": 0.07298650000302587
+    },
+    {
+      "seed": 42,
+      "k": 5,
+      "cached_scoring_s": 0.10122620000038296
+    },
+    {
+      "seed": 42,
+      "k": 20,
+      "cached_scoring_s": 0.1712623999992502
+    },
+    {
+      "seed": 43,
+      "k": 1,
+      "cached_scoring_s": 0.039630399995076004
+    },
+    {
+      "seed": 43,
+      "k": 3,
+      "cached_scoring_s": 0.08222289999685017
+    },
+    {
+      "seed": 43,
+      "k": 5,
+      "cached_scoring_s": 0.0742099999988568
+    },
+    {
+      "seed": 44,
+      "k": 1,
+      "cached_scoring_s": 0.07091339999897173
+    },
+    {
+      "seed": 44,
+      "k": 3,
+      "cached_scoring_s": 0.07315709999966202
+    },
+    {
+      "seed": 44,
+      "k": 5,
+      "cached_scoring_s": 0.1148821999959182
+    }
+  ],
+  "wall_s": 127.26583749999554,
+  "gpu_required": false,
+  "paid_api_calls": 0
+}

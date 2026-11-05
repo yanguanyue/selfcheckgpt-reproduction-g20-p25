@@ -1,0 +1,24 @@
+{"event": "start", "elapsed_s": 0.0165, "passages": 238, "config": {"paper_id": "P25", "group": "G20", "reproduction_type": "原设置部分复现（n-gram 分支）", "reference_budgets": [1, 3, 5], "seeds": [42, 43, 44], "anchor_budget": 20, "anchor_seed": 42, "ngram_order": 1, "lowercase": true, "include_original_passage": true, "smoothing_k": 0, "tokenizer_model": "en_core_web_sm", "positive_label": "minor_inaccurate or major_inaccurate", "higher_score": "more likely non-factual", "bootstrap_repeats": 1000, "bootstrap_seed": 2026, "upstream_commit": "19b492a2a380931bf1ed0ca94a9565c9aa7b03e1", "dataset_sha256": "9fea0263501d74b192b6f75dae5c25a67db7938e096df4aab18c65c42e83189c", "evaluation": "all 238 public evaluation passages; no fitting or hyperparameter selection; exploratory reproduction"}}
+{"event": "tokenization", "elapsed_s": 8.9731, "processed": 420, "total": 4998}
+{"event": "tokenization", "elapsed_s": 21.0862, "processed": 840, "total": 4998}
+{"event": "tokenization", "elapsed_s": 31.7107, "processed": 1260, "total": 4998}
+{"event": "tokenization", "elapsed_s": 42.8937, "processed": 1680, "total": 4998}
+{"event": "tokenization", "elapsed_s": 52.6359, "processed": 2100, "total": 4998}
+{"event": "tokenization", "elapsed_s": 63.0995, "processed": 2520, "total": 4998}
+{"event": "tokenization", "elapsed_s": 74.1696, "processed": 2940, "total": 4998}
+{"event": "tokenization", "elapsed_s": 84.033, "processed": 3360, "total": 4998}
+{"event": "tokenization", "elapsed_s": 94.9832, "processed": 3780, "total": 4998}
+{"event": "tokenization", "elapsed_s": 105.1854, "processed": 4200, "total": 4998}
+{"event": "tokenization", "elapsed_s": 114.8567, "processed": 4620, "total": 4998}
+{"event": "scoring", "elapsed_s": 122.1229, "seed": 42, "k": 1, "seconds": 0.0543175999991945}
+{"event": "scoring", "elapsed_s": 122.196, "seed": 42, "k": 3, "seconds": 0.07298650000302587}
+{"event": "scoring", "elapsed_s": 122.2973, "seed": 42, "k": 5, "seconds": 0.10122620000038296}
+{"event": "scoring", "elapsed_s": 122.4686, "seed": 42, "k": 20, "seconds": 0.1712623999992502}
+{"event": "scoring", "elapsed_s": 122.5083, "seed": 43, "k": 1, "seconds": 0.039630399995076004}
+{"event": "scoring", "elapsed_s": 122.5906, "seed": 43, "k": 3, "seconds": 0.08222289999685017}
+{"event": "scoring", "elapsed_s": 122.6648, "seed": 43, "k": 5, "seconds": 0.0742099999988568}
+{"event": "scoring", "elapsed_s": 122.7358, "seed": 44, "k": 1, "seconds": 0.07091339999897173}
+{"event": "scoring", "elapsed_s": 122.809, "seed": 44, "k": 3, "seconds": 0.07315709999966202}
+{"event": "scoring", "elapsed_s": 122.9239, "seed": 44, "k": 5, "seconds": 0.1148821999959182}
+{"event": "upstream_verification", "elapsed_s": 126.6713, "status": "passed", "checks": 6}
+{"event": "complete", "elapsed_s": 127.2665, "records": 19080, "wall_s": 127.26583749999554}

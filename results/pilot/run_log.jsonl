@@ -1,0 +1,13 @@
+{"event": "start", "elapsed_s": 0.0217, "passages": 3, "config": {"paper_id": "P25", "group": "G20", "reproduction_type": "原设置部分复现（n-gram 分支）", "reference_budgets": [1, 3, 5], "seeds": [42, 43, 44], "anchor_budget": 20, "anchor_seed": 42, "ngram_order": 1, "lowercase": true, "include_original_passage": true, "smoothing_k": 0, "tokenizer_model": "en_core_web_sm", "positive_label": "minor_inaccurate or major_inaccurate", "higher_score": "more likely non-factual", "bootstrap_repeats": 1000, "bootstrap_seed": 2026, "upstream_commit": "19b492a2a380931bf1ed0ca94a9565c9aa7b03e1", "dataset_sha256": "9fea0263501d74b192b6f75dae5c25a67db7938e096df4aab18c65c42e83189c", "evaluation": "all 238 public evaluation passages; no fitting or hyperparameter selection; exploratory reproduction"}}
+{"event": "scoring", "elapsed_s": 1.6363, "seed": 42, "k": 1, "seconds": 0.0011321999991196208}
+{"event": "scoring", "elapsed_s": 1.6374, "seed": 42, "k": 3, "seconds": 0.0010962999949697405}
+{"event": "scoring", "elapsed_s": 1.6387, "seed": 42, "k": 5, "seconds": 0.0012513999972725287}
+{"event": "scoring", "elapsed_s": 1.6416, "seed": 42, "k": 20, "seconds": 0.0028232999975443818}
+{"event": "scoring", "elapsed_s": 1.6425, "seed": 43, "k": 1, "seconds": 0.0007875000010244548}
+{"event": "scoring", "elapsed_s": 1.6436, "seed": 43, "k": 3, "seconds": 0.0010742000013124198}
+{"event": "scoring", "elapsed_s": 1.6447, "seed": 43, "k": 5, "seconds": 0.0011006999993696809}
+{"event": "scoring", "elapsed_s": 1.6454, "seed": 44, "k": 1, "seconds": 0.0006476999988080934}
+{"event": "scoring", "elapsed_s": 1.6463, "seed": 44, "k": 3, "seconds": 0.0008679000020492822}
+{"event": "scoring", "elapsed_s": 1.6478, "seed": 44, "k": 5, "seconds": 0.0014590000064345077}
+{"event": "upstream_verification", "elapsed_s": 4.5061, "status": "passed", "checks": 6}
+{"event": "complete", "elapsed_s": 5.1124, "records": 250, "wall_s": 5.111775400000624}

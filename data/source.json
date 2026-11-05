@@ -1,0 +1,9 @@
+{
+  "url": "https://huggingface.co/datasets/potsawee/wiki_bio_gpt3_hallucination/resolve/main/dataset.json",
+  "resolved_url": "https://huggingface.co/api/resolve-cache/datasets/potsawee/wiki_bio_gpt3_hallucination/b3cfb73209a8c51582fa1d9b7fe7e45fec5529b2/dataset.json?%2Fdatasets%2Fpotsawee%2Fwiki_bio_gpt3_hallucination%2Fresolve%2Fmain%2Fdataset.json=&etag=%22b659db8753face88e02f6689f4e367544301fe74%22",
+  "sha256": "9fea0263501d74b192b6f75dae5c25a67db7938e096df4aab18c65c42e83189c",
+  "bytes": 5114676,
+  "retrieved_date": "2026-11-05",
+  "license": "CC-BY-SA-3.0",
+  "etag": "W/\"b659db8753face88e02f6689f4e367544301fe74\""
+}
